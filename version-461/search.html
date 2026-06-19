@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索筛选-亚洲最新电影-最新电影大全-高清视频在线播放</title>
+    <meta name="description" content="亚洲最新电影搜索筛选页，支持按标题、地区、年份和类型浏览影片。">
+    <meta name="keywords" content="亚洲最新电影,最新电影大全,亚洲影片,高清播放,热门电影,电影更新,精选影片,电影搜索,影片筛选">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="亚洲最新电影">
+                <span class="brand-mark">▶</span>
+                <span class="brand-text">亚洲最新电影</span>
+            </a>
+            <nav class="main-nav" aria-label="主导航">
+                <a class="nav-link " href="index.html">首页</a>
+                <a class="nav-link " href="categories.html">分类</a>
+                <a class="nav-link " href="rankings.html">热播榜</a>
+                <a class="nav-link active" href="search.html">搜索</a>
+            </nav>
+            <form class="top-search" action="search.html" method="get">
+                <input type="search" name="q" placeholder="搜索标题、地区、类型..." autocomplete="off">
+                <button type="submit">搜索</button>
+            </form>
+            <button class="mobile-menu-button" type="button" aria-label="打开菜单" data-menu-button>☰</button>
+        </div>
+        <div class="mobile-panel" data-mobile-panel>
+            <form class="mobile-search" action="search.html" method="get">
+                <input type="search" name="q" placeholder="搜索影片">
+                <button type="submit">搜索</button>
+            </form>
+            <div class="mobile-links">
+                <a href="index.html">首页</a>
+                <a href="categories.html">分类总览</a>
+                <a href="rankings.html">热播榜</a>
+                <a href="search.html">搜索筛选</a>
+                <a href="category-asian-new.html">亚洲新片</a><a href="category-hd-movies.html">高清电影</a><a href="category-drama-selection.html">剧情精选</a><a href="category-action-crime.html">动作犯罪</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="search-panel" data-search-app data-source="assets/search-data.json">
+            <h1>搜索筛选</h1>
+            <p>输入标题、地区、类型或标签关键词，也可以按年份和地区快速筛选。</p>
+            <form class="filter-bar">
+                <input type="search" placeholder="输入关键词" data-search-input>
+                <select data-region-select>
+                    <option value="">全部地区</option>
+                </select>
+                <select data-year-select>
+                    <option value="">全部年份</option>
+                </select>
+                <button type="submit">筛选</button>
+            </form>
+            <div class="search-results-status" data-search-status>正在载入影片数据...</div>
+            <div class="simple-list" data-search-results></div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>亚洲最新电影</strong>
+                <p>亚洲最新电影栏目聚合近期影片内容，覆盖多题材亚洲电影和持续更新片单。</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">首页</a>
+                <a href="categories.html">分类</a>
+                <a href="rankings.html">热播榜</a>
+                <a href="search.html">搜索</a>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/search-data.js"></script>
+    <script src="assets/site.js"></script>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
